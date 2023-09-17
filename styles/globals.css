@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+ --foreground-rgb: 0, 0, 0;
+ --background-start-rgb: 214, 219, 220;
+ --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+ :root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 0, 0, 0;
+  --background-end-rgb: 0, 0, 0;
+ }
+}
+
+body {
+ overflow: hidden;
+ color: rgb(var(--foreground-rgb));
+ background: linear-gradient(
+   to bottom,
+   transparent,
+   rgb(var(--background-end-rgb))
+  )
+  rgb(var(--background-start-rgb));
+}
+
+/* line animation */
+.line1 {
+ animation: line1 7s linear infinite;
+}
+.line2 {
+ animation: line2 5s linear infinite;
+}
+.line3 {
+ animation: line3 6s linear infinite;
+}
+.line4 {
+ animation: line4 5s linear infinite;
+}
+.line5 {
+ animation: line5 4s linear infinite;
+}
+.line6 {
+ animation: line6 4s linear infinite;
+}
+@keyframes line1 {
+ 0% {
+  top: -10%;
+  left: 15%;
+ }
+ 50% {
+  top: 50%;
+  left: 15%;
+ }
+ 100% {
+  top: 100%;
+  left: 15%;
+ }
+}
+@keyframes line2 {
+ 50% {
+  top: 50%;
+  right: 15%;
+ }
+ 100% {
+  top: 100%;
+  right: 15%;
+ }
+ 0% {
+  top: -10%;
+  right: 15%;
+ }
+}
+@keyframes line3 {
+ 50% {
+  top: 50%;
+  left: 35%;
+ }
+ 100% {
+  top: 100%;
+  left: 35%;
+ }
+ 0% {
+  top: -10%;
+  left: 35%;
+ }
+}
+@keyframes line4 {
+ 50% {
+  top: 50%;
+  right: 50%;
+ }
+ 100% {
+  top: 100%;
+  right: 50%;
+ }
+ 0% {
+  top: -10%;
+  right: 50%;
+ }
+}
+@keyframes line5 {
+ 50% {
+  top: 50%;
+  right: 5%;
+ }
+ 100% {
+  top: 100%;
+  right: 5%;
+ }
+ 0% {
+  top: -10%;
+  right: 5%;
+ }
+}
+@keyframes line6 {
+ 50% {
+  top: 50%;
+  left: 5%;
+ }
+ 100% {
+  top: 100%;
+  left: 5%;
+ }
+ 0% {
+  top: -10%;
+  left: 5%;
+ }
+}
