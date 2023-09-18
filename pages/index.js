@@ -92,12 +92,15 @@ export default function Home() {
      </div>
     </div>
    </section>
-   <div className="line1 absolute z-[-1] w-2 h-20  bg-gradient-to-b from-orange-300 to-blue-300 rounded-full" />
-   <div className="line2 absolute z-[-1] w-2 h-20  bg-gradient-to-b from-orange-300 to-blue-300 rounded-full" />
-   <div className="line3 absolute z-[-1] w-2 h-20  bg-gradient-to-b from-orange-300 to-blue-300 rounded-full" />
-   <div className="line4 absolute z-[-1] w-2 h-20  bg-gradient-to-b from-orange-300 to-blue-300 rounded-full" />
-   <div className="line5 absolute z-[-1] w-2 h-20  bg-gradient-to-b from-orange-300 to-blue-300 rounded-full" />
-   <div className="line6 absolute z-[-1] w-2 h-20  bg-gradient-to-b from-orange-300 to-blue-300 rounded-full" />
+   <div className="lines-container">
+  <div className="line1 absolute z-[-1] w-2 h-[5rem] bg-gradient-to-b from-orange-300 to-blue-300 rounded-full" />
+  <div className="line2 absolute z-[-1] w-2 h-[3rem] bg-gradient-to-b from-orange-300 to-blue-300 rounded-full" />
+  <div className="line3 absolute z-[-1] w-2 h-[4rem] bg-gradient-to-b from-orange-300 to-blue-300 rounded-full" />
+  <div className="line4 absolute z-[-1] w-2 h-[3rem] bg-gradient-to-b from-orange-300 to-blue-300 rounded-full" />
+  <div className="line5 absolute z-[-1] w-2 h-[4rem] bg-gradient-to-b from-orange-300 to-blue-300 rounded-full" />
+  <div className="line6 absolute z-[-1] w-2 h-[5rem] bg-gradient-to-b from-orange-300 to-blue-300 rounded-full" />
+</div>
+
   </>
  );
 }
